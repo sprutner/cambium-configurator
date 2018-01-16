@@ -21,7 +21,7 @@ This is used in zero-touch deployment of Cambium PMP450x devices. The .cfg files
 1. `git clone` or copy the repository to your filesystem.
 1. `cd` to the directory
 1. Fill out `devices.csv` with your desired values. **NOTE: macAddress must not have any delineation (e.g. aa:bb:cc:dd:ee:ff should be aabbccddeeff). This should be easy if you used a barcode scanner on the Cambium devices like I did.**
-1. Either edit template-example.json to suit your needs, or generate your own using the instructions provided by Cambium. I just ran a diff between the factory default configuration and my desired configuration by downloading the configuration from a factory defaulted device and a fully configured device.
+1. Either edit template-example.json to suit your needs, or generate your own using the instructions provided by Cambium in the configuration guide linked above. I just ran a diff between the factory default configuration and my desired configuration by downloading the configuration from a factory defaulted device and a fully configured device.
 1. Run the script with `python configurator.py devices.csv template.json` substituting any name changes you may have made.
 1. You should now have your configuration files ready to be loaded on your FTP/HTTP/TFTP server for zero-touch deployment. I personally used a mini web-server to serve these.
 
