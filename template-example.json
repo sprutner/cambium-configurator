@@ -1,0 +1,210 @@
+{
+"configFileParameters": {
+ "rebootIfRequired": true
+},
+"cfgFileString": "Canopy configuration file",
+"cfgFileVersion": "1.0",
+"userParameters": {
+"radioConfig": {
+  "regionCode": 25
+ },
+ "networkConfig": {
+  "lanIp": "1.2.3.4",
+  "lanMask": "255.255.0.0",
+  "lanGateway": "169.254.0.0"
+},
+"authenticationConfig": {
+ "userAuthCertificates": [
+  "-----BEGIN CERTIFICATE-----\nredacted\n-----END CERTIFICATE-----\n",
+  "-----BEGIN CERTIFICATE-----\nredacted\n-----END CERTIFICATE-----\n"
+ ],
+ "authenticationKeyEncrypted": "redacted",
+ "authKeyOption": 1,
+ "accounts": [
+  {
+   "userName": "admin",
+   "level": 3,
+   "password": "teeehee",
+   "readOnly": false
+  },
+  {
+   "userName": "root",
+   "level": 3,
+   "password": "yeahright",
+   "readOnly": false
+  }
+ ]
+},
+"gpsConfig": {},
+"snmpConfig": {
+ "user2Group": 0,
+ "snmpv3EngineId": "800000a1030a003ebb9583",
+ "rwAuthPasswordEncrypted": "redacted",
+ "commStringROnly": "redacted",
+ "snmpTrapAddresses": [
+  "4.2.2.2",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0",
+  "0.0.0.0"
+ ],
+ "user1AuthPasswordEncrypted": "redacted",
+ "snmpv3AuthProt": 0,
+ "snmpv3TrapEnable": 0,
+ "snmpv3PrivProt": 0,
+ "snmpMibPerm": 1,
+ "roAuthPasswordEncrypted": "redacted",
+ "commStringRW": "redacted",
+ "userGroup1": 0,
+ "user1Enable": 1,
+ "snmpv3SecLvl": 2,
+ "user2Enable": 0,
+ "rwUserName": "cw-user",
+ "roUserName": "ro-user",
+ "roPrivPasswordEncrypted": "naaah",
+ "userName1": "utility-user",
+ "snmpPort": 161,
+ "rwUserEnable": 1,
+ "user2PrivPassword": "",
+ "trapDomainNameAppend": 0,
+ "rwPrivPasswordEncrypted": "redacted",
+ "user1PrivPasswordEncrypted": "redacted",
+ "userName2": "",
+ "user3PrivPassword": "",
+ "user2AuthPassword": "",
+ "userName3": "",
+ "user3Enable": 0,
+ "snmpTrapPort": 162,
+ "user3AuthPassword": "",
+ "user3Group": 0,
+ "snmpv2cEnable": 2,
+ "trapDelayAfterBootup": 5,
+ "snmpIpAccessFilter": [
+  {
+   "address": "1.2.3.4",
+   "netmask": 24
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  },
+  {
+   "address": "0.0.0.0",
+   "netmask": 0
+  }
+ ]
+},
+"smAuthenticationConfig": {
+ "useRealm": 0,
+ "authOuterId": "anonymous",
+ "UsrAccountEnableAccountingSM": 0,
+ "authenticationEnforce": 0,
+ "phase1": 0,
+ "phase2": 2,
+ "realm": "canopy.net",
+ "authPasswordEncrypted": "redacted",
+ "certificates": [
+  "-----BEGIN CERTIFICATE-----redacted-----END CERTIFICATE-----\n"
+ ],
+ "authUsername": "redacted"
+},
+"smNetworkConfig": {
+ "bridgeTableRestrict": 0,
+ "networkAccess": 0
+},
+"pppoeConfig": {
+ "pppoeCtlPriority": 0
+},
+"location": {
+ "siteName": "example",
+ "siteInfoViewable": 0,
+ "siteContact": "bofh",
+ "latitude": "+0.000000",
+ "siteLocation": "",
+ "longitude": "+0.000000",
+ "height": 0
+},
+"smRadioConfig": {
+ "frequencyScanList": [
+  5735000
+ ],
+ "powerUpMode": 0,
+ "apSelection": 0,
+ "colorCodeList": [
+  {
+   "colorCode": 254,
+   "priority": 1
+  },
+  {
+  "colorCode": 128,
+  "priority": 2
+  }
+ ],
+ "bandwidthScanList": [
+  50,
+  100,
+  150,
+  200,
+  300,
+  400
+ ]
+},
+"rfSecurityConfig": {
+ "encryptionConfig": 0
+},
+"cnMaestroConfig": {
+ "cnMaestroUrl": "cnmaestro.example.com",
+ "cnMaestroEnable": 1
+},
+"smNetworkSecurityConfig": {
+ "ethAccessEnable": 1
+},
+"vlanConfig": {
+ "vlanRemark": {},
+ "dynamicLearning": 1,
+ "managementVIDPriority": 0,
+ "vlanAcceptQinQFrames": 0,
+ "managementVID": 1,
+ "providerVID": 1,
+ "vlanMembership": [],
+ "agingTimeout": 25,
+ "vlanPortType": 0,
+ "managementVIDPriorityMode": 0,
+ "frameType": 0,
+ "priorityPrecedence": 0
+}
+}
+}
